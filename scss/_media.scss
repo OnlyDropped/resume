@@ -6,6 +6,35 @@
   }
 }
 
+@media (max-width: 1350px) {
+  .creative-work {
+    &__inner {
+      max-width: 1170px;
+      padding: 0 15px;
+    }
+    &__item {
+      max-width: 540px;
+    }
+    &__img {
+      width: 540px;
+    }
+  }
+}
+
+@media (max-width: 1250px) {
+  .card {
+    &__inner {
+      max-width: 1160px;
+      gap: 20px 0px;
+      padding: 0 15px;
+    }
+    &__item {
+      max-width: 100%;
+      padding: 20px 20px 30px 15px;
+    }
+  }
+}
+
 @media (max-width: 1100px) {
   .header-content {
     &__inner {
@@ -21,12 +50,39 @@
       right: -50px;
     }
   }
+  .card {
+    &__item {
+      max-width: 505px;
+    }
+    &__info {
+      max-width: 375px;
+    }
+  }
 }
 
 @media (max-width: 1050px) {
   .service {
     &__card::after {
       right: -20px;
+    }
+  }
+  .card {
+    &__item {
+      max-width: 485px;
+    }
+    &__info {
+      max-width: 350px;
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .creative-work {
+    &__item {
+      max-width: 475px;
+    }
+    &__img {
+      width: 475px;
     }
   }
 }
@@ -37,6 +93,23 @@
       &::after {
         display: none;
       }
+    }
+  }
+  .card {
+    &__inner {
+      flex-wrap: wrap;
+    }
+    &__images {
+      width: 70px;
+      height: 70px;
+    }
+  }
+  .creative-work {
+    &__item {
+      max-width: 445px;
+    }
+    &__img {
+      width: 445px;
     }
   }
 }
@@ -56,6 +129,37 @@
       justify-content: center;
       flex-wrap: wrap;
       gap: 20px;
+    }
+  }
+  .card {
+    &__item {
+      max-width: 100%;
+      width: 100%;
+      min-height: auto;
+    }
+    &__info {
+      max-width: 700px;
+    }
+  }
+  .creative-work {
+    &__title {
+      padding: 0 15px;
+    }
+    &__subtitle {
+      margin: 0 auto 40px;
+      padding: 0 15px;
+    }
+    &__inner {
+      flex-wrap: wrap;
+    }
+    &__item {
+      max-width: 100%;
+      width: 100%;
+    }
+    &__img {
+      max-width: 100%;
+      width: 100%;
+      object-position: center;
     }
   }
 }
@@ -288,6 +392,9 @@
 }
 
 @media (max-width: 450px) {
+  body{
+    overflow-x: hidden;
+  }
   .header-content {
     &__title {
       font-size: 30px;
@@ -298,6 +405,18 @@
   }
   .service {
     padding: 40px 0;
+  }
+  .creative-work {
+    padding: 35px 0;
+    &__title {
+      font-size: 36px;
+    }
+    &__item{
+      min-height: 250px;
+    }
+    &__img{
+      height: 250px;
+    }
   }
 }
 
@@ -314,12 +433,36 @@
   .service {
     padding: 30px 0;
   }
+  .card {
+    &__title {
+      font-size: 30px;
+      margin-bottom: 15px;
+    }
+    &__images {
+      margin-bottom: 15px;
+    }
+    &__item {
+      display: block;
+    }
+  }
 }
 
 @media (max-width: 320px) {
   .header-content {
     &__title {
       font-size: 26px;
+    }
+  }
+  .card {
+    &__title {
+      font-size: 26px;
+    }
+    &__subtitle {
+      font-size: 20px;
+      margin-bottom: 35px;
+    }
+    &__info-title {
+      font-size: 23px;
     }
   }
 }
