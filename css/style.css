@@ -1069,7 +1069,7 @@ button:hover::before {
   .header-nav__info {
     display: none;
     display: block;
-    position: absolute;
+    position: fixed;
     inset: 0;
     background: #000;
     display: -webkit-box;
