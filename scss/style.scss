@@ -4,6 +4,8 @@
 @import "global";
 .header {
   min-height: 100vh;
+  background: url('../img/header-bg.svg');
+  background-repeat: no-repeat;
 }
 
 .header-nav {

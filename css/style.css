@@ -93,6 +93,7 @@ a {
 
 body {
   background: #040f28;
+  overflow-x: hidden;
 }
 
 a {
@@ -144,6 +145,8 @@ button:hover::before {
 
 .header {
   min-height: 100vh;
+  background: url("../img/header-bg.svg");
+  background-repeat: no-repeat;
 }
 
 .header-nav {
